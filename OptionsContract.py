@@ -10,6 +10,10 @@ class OptionsContract:
     print("This is a $" + str(self.strikePrice)+" call for $"+self.ticker+".")
     print(self.ticker+" currently trades at $"+str(self.underlyingPrice)+" per share, and the contract is worth $"+str(self.contractPrice)+".")
     print("The option expires in "+str(self.daysToExpiration)+" days.")
+    
+  def changePrice(self,price):
+    self.contractPrice = price
+    print('the current contract price is'+ self.contractPrice)
 
   
   def moneyness(self):
