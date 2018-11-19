@@ -13,9 +13,7 @@ class OptionsContract:
     
   def changePrice(self,price):
     self.contractPrice = price
-    print('the current contract price is'+ self.contractPrice)
 
-  
   def moneyness(self):
     if self.strikePrice > self.underlyingPrice:
       intrinsicValue = self.underlyingPrice-self.strikePrice
