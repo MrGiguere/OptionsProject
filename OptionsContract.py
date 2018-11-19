@@ -28,4 +28,4 @@ class OptionsContract:
       print("This contract is a weekly contract and will expire soon.")
     else:
       print("This is not a weekly contract.")
-      
+MU181123C00038500 = OptionsContract('MU', 90, 0.45, 39.44, 428)
