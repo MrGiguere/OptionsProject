@@ -14,7 +14,7 @@ class OptionsContract:
   
   def moneyness(self):
     if self.strikePrice > self.underlyingPrice:
-      intrinsicValue = self.underlyingPrice-self.strikePrice
+      round(intrinsicValue, 2) = self.underlyingPrice-self.strikePrice
       print("The contract is in the money and has an intrinsic value of "+str(intrinsicValue)+'.')
       print("It's time value is "+str(self.contractPrice-intrinsicValue)+'.')
     else:
