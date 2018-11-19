@@ -21,12 +21,27 @@ class OptionsContract:
       print("The contract is out of the money and has a time value of"+str(self.contractPrice)+'.')
   
   def decay(self):
-    self.daystoExpiration = self.daystoExpiration-1
+    self.daysToExpiration = self.daysToExpiration-1
 
   def weekly(self):
-    if self.daystoExpiration <= 5:
+    if self.daysToExpiration <= 5:
       print("This contract is a weekly contract and will expire soon.")
     else:
       print("This is not a weekly contract.")
+
+MU181123C00038500 = OptionsContract('MU', 38.5, 1.45, 39.44, 5)
+MU181123C00038500.quote()
+MU181123C00038500.moneyness()
+MU181123C00038500.weekly()
+MU181123C00038500.decay()
+MU181123C00038500.quote()
+
 MU200117C00090000 = OptionsContract('MU', 90, 0.45, 39.44, 428)
+MU200117C00090000.quote()
+MU200117C00090000.moneyness()
+MU200117C00090000.weekly()
+
 GE210115C00025000 = OptionsContract('GE', 25, 0.19, 8.02, 792)
+GE210115C00025000.quote()
+GE210115C00025000.moneyness()
+GE210115C00025000.weekly()
