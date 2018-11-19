@@ -5,7 +5,6 @@ class OptionsContract:
     self.contractPrice = contractPrice
     self.underlyingPrice = underlyingPrice
     self.daysToExpiration = daysToExpiration
-      #please add these for each variable..
     
   def quote(self):
     print("This is a $" + str(self.strikePrice)+" for $"+self.ticker+".")
