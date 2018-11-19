@@ -29,3 +29,4 @@ class OptionsContract:
     else:
       print("This is not a weekly contract.")
 MU200117C00090000 = OptionsContract('MU', 90, 0.45, 39.44, 428)
+GE210115C00025000 = OptionsContract('GE", 25, 0.19, 8.02, 792)
