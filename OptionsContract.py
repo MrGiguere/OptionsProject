@@ -15,12 +15,12 @@ class OptionsContract:
     self.contractPrice = price
 
   def moneyness(self):
-    if self.strikePrice > self.underlyingPrice:
+    if self.strikePrice < self.underlyingPrice:
       intrinsicValue = self.underlyingPrice-self.strikePrice
       print("The contract is in the money and has an intrinsic value of "+str(intrinsicValue)+'.')
       print("It's time value is "+str(self.contractPrice-intrinsicValue)+'.')
     else:
-      print("The contract is out of the money and has a time value of"+str(self.contractPrice)+'.')
+      print("The contract is out of the money and has a time value of "+str(self.contractPrice)+'.')
   
   def decay(self):
     self.daysToExpiration = self.daysToExpiration-1
